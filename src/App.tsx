@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App w-full h-screen flex items-center justify-center bg-gray-200">
-      <NumberPlate vrm={vrm} size="xl" motion={motion} />
+      <NumberPlate vrm={vrm} size="2xl" motion={motion} />
     </div>
   );
 }

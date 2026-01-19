@@ -3,7 +3,7 @@ import { formatNumberPlate } from "../utils/utils";
 type NumberPlateProps = {
   vrm?: string | undefined;
   motion?: boolean;
-  size?: "xs" | "sm" | "md" | "lg" | "xl";
+  size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
 };
 
 const NumberPlate = ({ size, motion, vrm }: NumberPlateProps) => {
@@ -39,6 +39,13 @@ const NumberPlate = ({ size, motion, vrm }: NumberPlateProps) => {
       options = {
         plateWidth: "w-[18rem]",
         textSize: "text-4xl",
+        borderWidth: "border-8",
+      };
+      break;
+    case "2xl":
+      options = {
+        plateWidth: "w-[22rem]",
+        textSize: "text-6xl",
         borderWidth: "border-8",
       };
 
